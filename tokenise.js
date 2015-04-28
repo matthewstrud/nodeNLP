@@ -3,7 +3,6 @@ var tokenise = function (str)
 
 
     str = str.toLowerCase();
-
     //using regular expressions replace with ""(remove) everything that is not a letter or a space
     str = str.replace(/[^a-zA-Z- ]/g,'');
     //further replace two or more spaces with one space(removes extra spaces)
@@ -19,3 +18,4 @@ var tokenise = function (str)
 }
 
 module.exports = tokenise;
+
