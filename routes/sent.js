@@ -37,7 +37,8 @@ router.get('/', function(req, res, next) {
     var retObj = {sentiment:count};
 
     console.log(retObj);
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.type('application/json');
     res.send(retObj);
 

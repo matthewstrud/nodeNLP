@@ -20,6 +20,9 @@ router.get('/', function(req, res, next) {
     arr = stopset(arr);
 
     var retObj = JSON.stringify(arr);
+
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.type('application/json');
     res.send(retObj);
 });
