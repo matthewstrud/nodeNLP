@@ -231,6 +231,7 @@ something
 sometime
 sometimes
 somewhere
+soon
 still
 such
 system

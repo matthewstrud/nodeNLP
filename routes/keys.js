@@ -17,6 +17,8 @@ router.get('/', function(req, res, next) {
 
     arr = stem(arr);
 
+    arr = stopset(arr);
+
     var retObj = JSON.stringify(arr);
     res.type('application/json');
     res.send(retObj);
