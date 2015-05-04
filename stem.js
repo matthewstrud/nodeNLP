@@ -41,4 +41,3 @@ var stem = function (arr) {
     return outArr;
 }
 module.exports = stem;
-
