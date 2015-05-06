@@ -15,7 +15,7 @@ var stem = function (arr) {
                 if(string.charAt(index + contentLength) == "") {
                     found = true;
                     //stem
-                    string = string.substring(0, index);
+                    //string = string.substring(0, index);
                     //if the stem is not already in
                     if (outArr.indexOf(string) == -1) {
                         //add to the array
